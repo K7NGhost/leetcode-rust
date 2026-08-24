@@ -1,9 +1,10 @@
+// Completed 8/24/2026
+// Hashmap
 /*
  * @lc app=leetcode id=383 lang=rust
  *
  * [383] Ransom Note
  */
-
 
 struct Solution;
 // @lc code=start
@@ -25,8 +26,8 @@ impl Solution {
         }
 
         for val in dic.values() {
-            if *val != 0 {
-                return false
+            if *val > 0 {
+                return false;
             }
         }
         true
@@ -35,8 +36,7 @@ impl Solution {
 // @lc code=end
 
 fn main() {
-    let mut ransom_note = String::from("aa");
-    let mut magazine = String::from("aab");
-    println!("{}", Solution::can_construct(ransom_note, magazine));    
+    let ransom_note = String::from("aa");
+    let magazine = String::from("aab");
+    println!("{}", Solution::can_construct(ransom_note, magazine));
 }
-
