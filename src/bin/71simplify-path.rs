@@ -1,4 +1,6 @@
 // Completed 9/27/2026
+// Used Stack data structure
+// not optimal
 struct Solution;
 /*
  * @lc app=leetcode id=71 lang=rust
