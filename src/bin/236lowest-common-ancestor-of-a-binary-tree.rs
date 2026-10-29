@@ -63,10 +63,12 @@ impl Solution {
 
         let right = Self::lowest_common_ancestor(node.borrow().right.clone(), p.clone(), q.clone());
 
+        // Both sides found a target
         if left.is_some() && right.is_some() {
             return Some(node);
         }
 
+        // Otherwise return whichever side found a target
         left.or(right)
     }
 }
